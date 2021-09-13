@@ -1,0 +1,18 @@
+{
+  "name": "aprendendo-sobre-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "babel:test": "babel index.js -o bundle.js --presets=@babel/env -w",
+    "babel:theme": "babel theme.js -o bundle-theme.js --presets=@babel/env -w"
+
+  },
+  "repository": "https://github.com/matheuspython/aprendendo-sobre-babel.git",
+  "author": "matheus souza <ruivorobado@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  }
+}

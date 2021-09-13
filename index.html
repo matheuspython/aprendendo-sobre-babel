@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/resets.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="h">
+        fake blog do matheus
+      </h1>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <div class="container">
+      <h1>oq é babel?</h1>
+      <section class="explicacao">
+        <p>
+          mesmo hoje em dia os browser estando muito avançados uma parte da web ainda é
+          navegada por usuario com seu navegador desatualizado e isso é um problema para os
+          desenvolvedores pois algumas funcionalidades do seu web app podem não funcionar em tais
+          navegadores o babel surgiu para resolver esse problema pois ele reescreve um codigo javascript
+          com sintaxe atual em um codigo que pode ser lido por browsers mais antigos
+          a baixo vc pode ver o codigo em javascript moderno na esquerda e do javascript antigo na direita
+        </p>
+      </section>
+
+      <section class="comparacao">
+        <article class="js">
+<code>
+  <pre>
+    const nome = 'carlos';
+    const obj = {};
+    obj.name = nome;
+    
+    const obj2 = {...obj};
+    console.log(obj2);
+  </pre>
+</code>  
+        </article>
+        <article class="babel">
+       <code>
+
+         "use strict";
+         
+         function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+         
+         function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+         
+         function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+         
+         var nome = 'carlos';
+         var obj = {};
+         obj.name = nome;
+         
+         var obj2 = _objectSpread({}, obj);
+         
+         console.log(obj2);
+       </code>
+
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      todos os direitos reservado a mim :)
+    </div>
+  </footer>
+
+  <script src="./bundle.js"></script>
+  <script src="./bundle-theme.js"></script>
+</body>
+</html>

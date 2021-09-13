@@ -1,0 +1,46 @@
+main.conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.conteudo .container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.conteudo .container h1{
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.conteudo .container .explicacao p{
+  width: 100%;
+  max-width: 1100px;
+  text-align: justify;
+}
+.comparacao{
+  width: 100%;
+}
+ .comparacao h2{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comparacao{
+  padding: 2% 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.js {
+  width: 45%;
+}
+.babel {
+  width: 45%;
+}
